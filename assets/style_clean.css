@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 .nav-items{
-    
+
 }
 .nav-item{
     display: inline-block;
@@ -21,7 +21,6 @@
 }
 
 .middle{
-    padding: 10vh;
 }
 
 .btn-link {
@@ -41,6 +40,7 @@
 
 .container1{
     display: flex;
+    padding: 10vh;
 }
 
 .avatar {
@@ -60,6 +60,8 @@
 }
 
 .container2{
+    padding: 10vh;
+    background-color: burlywood;
 }
 
 .container2 .top{
@@ -85,6 +87,7 @@
 }
 
 .container3{
+    padding: 10vh;
 }
 
 .container3 .mainproject{
