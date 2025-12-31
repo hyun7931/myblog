@@ -1,0 +1,120 @@
+
+
+.nav{
+    border: 2px solid red;
+    margin: 0.1vh;
+    padding: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-items{
+    border: 2px solid orange;
+}
+.nav-item{
+    border: 2px solid pink;
+    display: inline-block;
+    margin-left: 2.5vh;
+
+}
+
+.middle{
+    border: 2px solid green;
+    padding: 10vh;
+}
+
+.container1{
+    border: 2px solid yellow;
+    display: flex;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container1 .left{
+    border: 2px solid sandybrown;
+    flex: 3;
+    padding: 5vh;
+}
+
+.container1 .right{
+    border: 2px solid goldenrod;
+    flex: 7;
+}
+
+.container2{
+    border: 2px solid red;
+}
+
+.container2 .top{
+    border: 2px solid orangered;
+    width: 100%;
+}
+
+.container2 .bottom{
+    border: 2px solid salmon;
+    display: felx;
+}
+
+.container2 .good-item{
+    border: 2px dashed palevioletred;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5vh;
+}
+
+.container2 .good-item .good-item-circle{
+    border: 2px dashed pink;
+}
+
+.container2 .good-item .good-item-sentence{
+    border: 2px dashed plum;
+}
+
+.container3{
+    border: 2px dashed green;
+}
+
+.container3 .mainproject{
+    border: 2px dashed orange;
+    padding: 5vh;
+}
+
+.container3 .project-content{
+    border: 2px dashed red;
+    display: flex;
+    padding: 1vh
+}
+
+.container3 .project-hori{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vh;
+}
+
+.container3 .project-ver{
+    padding: 0.5vh;
+}
+
+
+.left{
+    border: 2px solid sandybrown;
+    flex: 5;
+}
+
+.right{
+    border: 2px solid goldenrod;
+    flex: 5;
+}
+
+.bottom{
+    border: 2px solid blue;
+    margin: 0.1vh;
+}
