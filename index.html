@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYUN's Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="nav">
+        HYUN
+        <div class="nav-items">
+            <button class="nav-item">Home</button>
+            <button class="nav-item">About</button>
+            <button class="nav-item">Skills</button>
+            <button class="nav-item">Projects</button>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="container1">
+            <div class="left">
+                <img src="/assets/profileimage.jpg" class="avatar">
+            </div>
+            <div class="right">
+                <h1>안녕하세요,</h1>
+                <h1>유니크한 한줄 소개</h1>
+                <p>그에 대한 설명</p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="section-header">
+                <h2>| ABOUT ME |</h2>
+            </div>
+            <div class="c2-grid">
+                <!-- 이름, 생년월일, 연락처, github주소, 학력 -->
+                <div class="c2-item">
+                    <span class="c2-icon">👤</span>
+                    <div class="c2-info">
+                        <p class="c2-label">이름</p>
+                        <p class="c2-value">이수현</p>
+                    </div>
+                </div>
+                <div class="c2-item">
+                    <span class="c2-icon">📅</span>
+                    <div class="c2-info">
+                        <p class="c2-label">생년월일</p>
+                        <p class="c2-value">2001.06.15</p>
+                    </div>
+                </div>
+                <div class="c2-item">
+                    <span class="c2-icon">💾</span>
+                    <div class="c2-info">
+                        <p class="c2-label">github</p>
+                        <p class="c2-value"><a href="https://github.com/hyun7931" class="btn-link" target="_blank">바로가기</a></p>
+                    </div>
+                </div>
+                <div class="c2-item">
+                    <span class="c2-icon">📥</span>
+                    <div class="c2-info">
+                        <p class="c2-label">이메일</p>
+                        <p class="c2-value">shlee3456@naver.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="section-header">
+                <h2>| STRENGTHS |</h2>
+            </div>
+            <div class="c3-grid">
+                <div class="c3-item">
+                    <h3>개선</h3>
+                    <p>더 나은 구조와 성능을<br>끊임없이 고민합니다.</p>
+                </div>
+                <div class="c3-item">
+                    <h3>공유</h3>
+                    <p>배운 내용을 정리해<br>주변과 공유합니다.</p>
+                </div>
+                <div class="c3-item">
+                    <h3>기록</h3>
+                    <p>메모하는 습관으로<br>빠르게 적응합니다.</p>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="container4">
+            <div class="section-header">
+                <h2>| SKILLS |</h2>
+            </div>
+        </div> !-->
+
+        <div class="container5">
+            <div class="section-header">
+                <h2>| PROJECTS |</h2>
+            </div>
+            
+            <div class="c5-item">
+                <div class="c5-title-area">
+                    <h3>DeepTicker</h3>
+                    <span class="c5-date">2025.03 - 2025.05</span>
+                    <span class="c5-detail">교내 공모전 2인 프로젝트 - 장려상 수상</span>
+                </div>
+                <p class="c5-overview">경제 뉴스를 자동 수집 → 분석 → 요약 및 배경지식 제공하고,
+                    주가 예측 및 유사 주식 추천을 통해 투자 의사결정을 돕는 AI 기반 증권 정보 플랫폼입니다.</p>
+                <div class="c5-body">
+                    <div class="c5-info">
+                        <ul>
+                            <li><b>담당:</b> FE, BE (뉴스 처리 시스템)</li>
+                            <li><b>기여:
+                                <ul>
+                                    <li>증권 뉴스 자동 크롤링 파이프라인 구축</li>
+                                    <li>ML + LLM 기반 뉴스 자동 분류 시스템 설계 및 구현</li>
+                                    <li>Gemini API 기반 뉴스 요약 및 프롬프트 설계</li>
+                                    <li>RAG + FAISS 인덱스를 활용한 유사 뉴스 검색 기능 개발</li>
+                                </ul>
+                            </b> 
+                            <li><b>Tech:</b> React, Node.js, Flask, FAISS, GeminiAPI</li>
+                        </ul>
+                        <div class="c5-links">
+                            <a href="https://github.com/DeepTicker" class="btn-link">Github</a>
+                            <a href="https://www.youtube.com/watch?v=1kFANqnp6R0" class="btn-link">Demo</a>
+                        </div>
+                    </div>
+                    <img src="/assets/DeepTicker.JPG" class="c5-project-img">
+                </div>
+            </div>
+
+            <!-- <div class="c5-item">
+                <div class="c5-title-area">
+                    <h3>LIBO</h3>
+                    <span class="c5-date">2025.11 - 2025.12</span>
+                    <span class="c5-detail">개인 과제 1인 프로젝트</span>
+                </div>
+                <p class="c5-overview">경제 뉴스를 자동 수집 → 분석 → 요약 및 배경지식 제공하고,
+                    주가 예측 및 유사 주식 추천을 통해 투자 의사결정을 돕는 AI 기반 증권 정보 플랫폼입니다.</p>
+                <div class="c5-body">
+                    <div class="c5-info">
+                        <ul>
+                            <li><b>담당:</b> FE, BE (뉴스 처리 시스템)</li>
+                            <li><b>기여:
+                                <ul>
+                                    <li>증권 뉴스 자동 크롤링 파이프라인 구축</li>
+                                    <li>ML + LLM 기반 뉴스 자동 분류 시스템 설계 및 구현</li>
+                                    <li>Gemini API 기반 뉴스 요약 및 프롬프트 설계</li>
+                                    <li>RAG + FAISS 인덱스를 활용한 유사 뉴스 검색 기능 개발</li>
+                                </ul>
+                            </b> 
+                            <li><b>Tech:</b> React, Node.js, Flask, FAISS, GeminiAPI</li>
+                        </ul>
+                        <div class="c5-links">
+                            <a href="https://github.com/DeepTicker" class="btn-link">Github</a>
+                            <a href="https://www.youtube.com/watch?v=1kFANqnp6R0" class="btn-link">Demo</a>
+                        </div>
+                    </div>
+                    <img src="/assets/DeepTicker.JPG" class="c5-project-img">
+                </div>
+            </div>
+
+            <div class="c5-item">
+                <div class="c5-title-area">
+                    <h3>StampIt (?)</h3>
+                    <span class="c5-date">2025.07 - 2025.08</span>
+                    <span class="c5-detail">교내 창업대회 4인 프로젝트</span>
+                </div>
+                <p class="c5-overview">얘는 넣을지 말지 고민중</p>
+                <div class="c5-body">
+                    <div class="c5-info">
+                        <ul>
+                            <li><b>담당:</b> FE, BE (뉴스 처리 시스템)</li>
+                            <li><b>기여:
+                                <ul>
+                                    <li>증권 뉴스 자동 크롤링 파이프라인 구축</li>
+                                    <li>ML + LLM 기반 뉴스 자동 분류 시스템 설계 및 구현</li>
+                                    <li>Gemini API 기반 뉴스 요약 및 프롬프트 설계</li>
+                                    <li>RAG + FAISS 인덱스를 활용한 유사 뉴스 검색 기능 개발</li>
+                                </ul>
+                            </b> 
+                            <li><b>Tech:</b> React, Node.js, Flask, FAISS, GeminiAPI</li>
+                        </ul>
+                        <div class="c5-links">
+                            <a href="https://github.com/DeepTicker" class="btn-link">Github</a>
+                            <a href="https://www.youtube.com/watch?v=1kFANqnp6R0" class="btn-link">Demo</a>
+                        </div>
+                    </div>
+                    <img src="/assets/DeepTicker.JPG" class="c5-project-img">
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>감사합니다? 아래에 뭐 써야하죠</p>
+    </div>
+</body>
+</html>
