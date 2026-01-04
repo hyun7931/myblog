@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="assets/style.css"> -->
-    <link rel="stylesheet" href="assets/style_clean.css">
+    <title>HYUN's Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="nav">
@@ -13,10 +12,11 @@
         <div class="nav-items">
             <button class="nav-item">Home</button>
             <button class="nav-item">About</button>
+            <button class="nav-item">Skills</button>
             <button class="nav-item">Projects</button>
-            <button class="nav-item">Logs</button>
         </div>
     </div>
+
     <div class="middle">
         <div class="container1">
             <div class="left">
@@ -28,125 +28,171 @@
                 <p>그에 대한 설명</p>
             </div>
         </div>
+
         <div class="container2">
-            <div class="middle-title">
-                <p></p>
+            <div class="section-header">
+                <h2>| ABOUT ME |</h2>
             </div>
-            <div class="top">
+            <div class="c2-grid">
                 <!-- 이름, 생년월일, 연락처, github주소, 학력 -->
-                <div class="good-item">
-                    <div class="good-item-circle">
-                        <!-- TODO 나중에 동그라미로? -->
-                        <p>이름</p>
-                        <div class="good-item-sentence">이수현</div>
+                <div class="c2-item">
+                    <span class="c2-icon">👤</span>
+                    <div class="c2-info">
+                        <p class="c2-label">이름</p>
+                        <p class="c2-value">이수현</p>
                     </div>
-                    <div class="good-item-circle">
-                        <p>생년월일</p>
-                        <div class="good-item-sentence">2001.06.15</div>
+                </div>
+                <div class="c2-item">
+                    <span class="c2-icon">📅</span>
+                    <div class="c2-info">
+                        <p class="c2-label">생년월일</p>
+                        <p class="c2-value">2001.06.15</p>
                     </div>
-                    <div class="good-item-circle">
-                        <p>이메일</p>
-                        <div class="good-item-sentence">shlee3456@naver.com</div>
+                </div>
+                <div class="c2-item">
+                    <span class="c2-icon">💾</span>
+                    <div class="c2-info">
+                        <p class="c2-label">github</p>
+                        <p class="c2-value"><a href="https://github.com/hyun7931" class="btn-link" target="_blank">바로가기</a></p>
                     </div>
-                    <div class="good-item-circle">
-                        <p>github</p>
-                        <div class="good-item-sentence">
-                            <a href="https://github.com/hyun7931" class="btn-link" target="_blank">Github 바로가기</a>
+                </div>
+                <div class="c2-item">
+                    <span class="c2-icon">📥</span>
+                    <div class="c2-info">
+                        <p class="c2-label">이메일</p>
+                        <p class="c2-value">shlee3456@naver.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="section-header">
+                <h2>| STRENGTHS |</h2>
+            </div>
+            <div class="c3-grid">
+                <div class="c3-item">
+                    <h3>개선</h3>
+                    <p>더 나은 구조와 성능을<br>끊임없이 고민합니다.</p>
+                </div>
+                <div class="c3-item">
+                    <h3>공유</h3>
+                    <p>배운 내용을 정리해<br>주변과 공유합니다.</p>
+                </div>
+                <div class="c3-item">
+                    <h3>기록</h3>
+                    <p>메모하는 습관으로<br>빠르게 적응합니다.</p>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="container4">
+            <div class="section-header">
+                <h2>| SKILLS |</h2>
+            </div>
+        </div> !-->
+
+        <div class="container5">
+            <div class="section-header">
+                <h2>| PROJECTS |</h2>
+            </div>
+            
+            <div class="c5-item">
+                <div class="c5-title-area">
+                    <h3>DeepTicker</h3>
+                    <span class="c5-date">2025.03 - 2025.05</span>
+                    <span class="c5-detail">교내 공모전 2인 프로젝트 - 장려상 수상</span>
+                </div>
+                <p class="c5-overview">경제 뉴스를 자동 수집 → 분석 → 요약 및 배경지식 제공하고,
+                    주가 예측 및 유사 주식 추천을 통해 투자 의사결정을 돕는 AI 기반 증권 정보 플랫폼입니다.</p>
+                <div class="c5-body">
+                    <div class="c5-info">
+                        <ul>
+                            <li><b>담당:</b> FE, BE (뉴스 처리 시스템)</li>
+                            <li><b>기여:
+                                <ul>
+                                    <li>증권 뉴스 자동 크롤링 파이프라인 구축</li>
+                                    <li>ML + LLM 기반 뉴스 자동 분류 시스템 설계 및 구현</li>
+                                    <li>Gemini API 기반 뉴스 요약 및 프롬프트 설계</li>
+                                    <li>RAG + FAISS 인덱스를 활용한 유사 뉴스 검색 기능 개발</li>
+                                </ul>
+                            </b> 
+                            <li><b>Tech:</b> React, Node.js, Flask, FAISS, GeminiAPI</li>
+                        </ul>
+                        <div class="c5-links">
+                            <a href="https://github.com/DeepTicker" class="btn-link">Github</a>
+                            <a href="https://www.youtube.com/watch?v=1kFANqnp6R0" class="btn-link">Demo</a>
                         </div>
                     </div>
-                    <div class="good-item-circle">
-                        <p>학력</p>
-                        <div class="good-item-sentence">졸업예정</div>
-                    </div>
+                    <img src="/assets/DeepTicker.JPG" class="c5-project-img">
                 </div>
             </div>
-            <div class="bottom">
-                <!-- 날 나타내는 말? 장점? -->
-                <div class="good-item">
-                    <div class="good-item-circle">
-                        <!-- TODO 나중에 동그라미로? -->
-                        <p>개선</p>
-                        <div class="good-item-sentence">더 나은 구조와 성능을 고민합니다.</div>
-                        <div class="good-item-sentence">????</div>
+
+            <!-- <div class="c5-item">
+                <div class="c5-title-area">
+                    <h3>LIBO</h3>
+                    <span class="c5-date">2025.11 - 2025.12</span>
+                    <span class="c5-detail">개인 과제 1인 프로젝트</span>
+                </div>
+                <p class="c5-overview">경제 뉴스를 자동 수집 → 분석 → 요약 및 배경지식 제공하고,
+                    주가 예측 및 유사 주식 추천을 통해 투자 의사결정을 돕는 AI 기반 증권 정보 플랫폼입니다.</p>
+                <div class="c5-body">
+                    <div class="c5-info">
+                        <ul>
+                            <li><b>담당:</b> FE, BE (뉴스 처리 시스템)</li>
+                            <li><b>기여:
+                                <ul>
+                                    <li>증권 뉴스 자동 크롤링 파이프라인 구축</li>
+                                    <li>ML + LLM 기반 뉴스 자동 분류 시스템 설계 및 구현</li>
+                                    <li>Gemini API 기반 뉴스 요약 및 프롬프트 설계</li>
+                                    <li>RAG + FAISS 인덱스를 활용한 유사 뉴스 검색 기능 개발</li>
+                                </ul>
+                            </b> 
+                            <li><b>Tech:</b> React, Node.js, Flask, FAISS, GeminiAPI</li>
+                        </ul>
+                        <div class="c5-links">
+                            <a href="https://github.com/DeepTicker" class="btn-link">Github</a>
+                            <a href="https://www.youtube.com/watch?v=1kFANqnp6R0" class="btn-link">Demo</a>
+                        </div>
                     </div>
-                    <div class="good-item-circle">
-                        <p>공유</p>
-                        <div class="good-item-sentence">배운 내용을 정리해 주변과 공유합니다.</div>
-                        <div class="good-item-sentence">블로그,,,?</div>
-                    </div>
-                    <div class="good-item-circle">
-                        <p>기록</p>
-                        <div class="good-item-sentence">하루하루 기록하는 것을 좋아합니다</div>
-                        <div class="good-item-sentence">메모하는 습관으로 새로운 환경에도 빠르게 적응합니다</div>
-                    </div>
+                    <img src="/assets/DeepTicker.JPG" class="c5-project-img">
                 </div>
             </div>
-        </div>
-        <div class="container3">
-            <div class="mainproject">
-                <p class="project-title">DeepTicker</p>
-                <div class="project-content">
-                    <div class="right">사진이 들어가고</div>
-                    <div class="left">
-                        <div class="top"></div>
-                            <div class="project-hori">
-                                <div class="pro-item">
-                                    <p>기간</p>
-                                    <p>2025.03-05</p>
-                                </div>
-                                <div class="pro-item">
-                                    <p>규모</p>
-                                    <p>2인 팀프로젝트</p>
-                                </div>
-                                <div class="pro-item">
-                                    <p>담당</p>
-                                    <p>FE, BE</p>
-                                </div>
-                            </div>
-                            <div class="project-ver">
-                                <div class="pro-item">
-                                    <p>주요 기능</p>
-                                    <li>주가 예측 및 유사 주식 추천</li>
-                                    <li>수준별 증권 뉴스 요약 및 배경지식 제공</li>
-                                </div>
-                                <div class="pro-item">
-                                    <p>수상</p>
-                                    <li>2025 고려대학교 정보대학 NEXT CONTEST 장려상</li>
-                                </div>
-                                <div class="pro-item">
-                                    <a href="https://github.com/DeepTicker" class="btn-link" target="_blank">Github 바로가기</a>
-                                </div>
-                                <div class="pro-item">
-                                    <a href="https://www.youtube.com/watch?v=1kFANqnp6R0" class="btn-link" target="_blank">시연영상 바로가기</a>
-                                </div>
-                                <div class="pro-item">
-                                    <p>담당</p>
-                                    <li>수준별 경제 뉴스 요약 및 배경지식 담당하여 풀스택 개발</li>
-                                    <li>뉴스를 자동으로 수집하고 AI 기반 분류/분석/요약하여 맞춤형 배경지식을 제공하는 뉴스 처리 시스템 개발</li>
-                                    <p>- 네이버 금융 뉴스 자동 크롤링, 이미지 및 메타데이터 포함</p>
-                                    <p>- ML + LLM 기반 뉴스 자동 분류</p>
-                                    <p>- 감정분석 : Flask 서버, 한국 금융 특화 모델 KoELECTRA 사용</p>
-                                    <p>- Gemini API를 이용한 요약, 프롬포팅</p>
-                                    <p>- FAISS 인덱스 기반 유사 뉴스 검색</p>
-                                    <p>- 과거 유사 뉴스 검색</p>
-                                    <p>- 뉴스페이지 프론트 개발</p>
-                                </div>
-                                <div class="pro-item">
-                                    <p>스택</p>
-                                    <li>React, node/express.js + flask</li>
-                                </div>
-                            </div>
-                    </div>
+
+            <div class="c5-item">
+                <div class="c5-title-area">
+                    <h3>StampIt (?)</h3>
+                    <span class="c5-date">2025.07 - 2025.08</span>
+                    <span class="c5-detail">교내 창업대회 4인 프로젝트</span>
                 </div>
-            </div>
-            <div class="mainproject">
-                프로젝트2
-            </div>
-            <div class="mainproject">
-                프로젝트3
-            </div>
+                <p class="c5-overview">얘는 넣을지 말지 고민중</p>
+                <div class="c5-body">
+                    <div class="c5-info">
+                        <ul>
+                            <li><b>담당:</b> FE, BE (뉴스 처리 시스템)</li>
+                            <li><b>기여:
+                                <ul>
+                                    <li>증권 뉴스 자동 크롤링 파이프라인 구축</li>
+                                    <li>ML + LLM 기반 뉴스 자동 분류 시스템 설계 및 구현</li>
+                                    <li>Gemini API 기반 뉴스 요약 및 프롬프트 설계</li>
+                                    <li>RAG + FAISS 인덱스를 활용한 유사 뉴스 검색 기능 개발</li>
+                                </ul>
+                            </b> 
+                            <li><b>Tech:</b> React, Node.js, Flask, FAISS, GeminiAPI</li>
+                        </ul>
+                        <div class="c5-links">
+                            <a href="https://github.com/DeepTicker" class="btn-link">Github</a>
+                            <a href="https://www.youtube.com/watch?v=1kFANqnp6R0" class="btn-link">Demo</a>
+                        </div>
+                    </div>
+                    <img src="/assets/DeepTicker.JPG" class="c5-project-img">
+                </div>
+            </div> -->
+
+
         </div>
     </div>
+
     <div id="footer">
         <p>감사합니다? 아래에 뭐 써야하죠</p>
     </div>

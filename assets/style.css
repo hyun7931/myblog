@@ -1,120 +1,287 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
 
-.nav{
-    border: 2px solid red;
-    margin: 0.1vh;
-    padding: 2vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+a { text-decoration: none; color: inherit; }
+
+.nav {
+    padding: 0 10%;
+    height: 60px;
+    background: #222;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-.nav-items{
-    border: 2px solid orange;
+
+.nav-items { display: flex; gap: 2rem; }
+
+.nav-item {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s;
 }
-.nav-item{
-    border: 2px solid pink;
+
+.nav-item:hover { color: white; }
+
+/* 섹션 */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 900;
     display: inline-block;
-    margin-left: 2.5vh;
-
 }
 
-.middle{
-    border: 2px solid green;
-    padding: 10vh;
+/* utils*/
+.btn-link {
+    display: inline-block;
+    background: #222;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background 0.3s;
 }
 
-.container1{
-    border: 2px solid yellow;
+
+/* container1 : intro */
+.container1 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+    min-height: 60vh;
+}
+
+.container1 .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .avatar {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-.container1 .left{
-    border: 2px solid sandybrown;
-    flex: 3;
-    padding: 5vh;
+.container1 .right {
+    flex: 1.5;
+    padding-left: 4rem;
 }
 
-.container1 .right{
-    border: 2px solid goldenrod;
-    flex: 7;
+.container1 h1 {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    font-weight: 800;
 }
 
-.container2{
-    border: 2px solid red;
+.container1 p {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-.container2 .top{
-    border: 2px solid orangered;
-    width: 100%;
+/* container2 : about me */
+.container2 {
+    padding: 6rem;
 }
 
-.container2 .bottom{
-    border: 2px solid salmon;
-    display: felx;
+.c2-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.container2 .good-item{
-    border: 2px dashed palevioletred;
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0.5vh;
-}
-
-.container2 .good-item .good-item-circle{
-    border: 2px dashed pink;
-}
-
-.container2 .good-item .good-item-sentence{
-    border: 2px dashed plum;
-}
-
-.container3{
-    border: 2px dashed green;
-}
-
-.container3 .mainproject{
-    border: 2px dashed orange;
-    padding: 5vh;
-}
-
-.container3 .project-content{
-    border: 2px dashed red;
+.c2-item {
     display: flex;
-    padding: 1vh
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.container3 .project-hori{
+.c2-icon {
+    font-size: 2rem;
+    background: #f0f0f0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.c2-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.c2-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+.c2-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* container3 : strengths */
+.container3 {
+    padding: 6rem;
+}
+
+.c3-grid {
     display: flex;
     justify-content: space-between;
-    padding: 0.5vh;
+    gap: 2rem;
 }
 
-.container3 .project-ver{
-    padding: 0.5vh;
+.c3-item {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
 }
 
-
-.left{
-    border: 2px solid sandybrown;
-    flex: 5;
+.c3-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
 }
 
-.right{
-    border: 2px solid goldenrod;
-    flex: 5;
+.c3-item p {
+    color: black;
 }
 
-.bottom{
-    border: 2px solid blue;
-    margin: 0.1vh;
+/* container4 : skills */
+.container4 {
+    padding: 6rem;
+}
+
+/* container5 : projects */
+.container5 {
+    padding: 6rem;
+}
+
+.c5-item {
+    background: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.c5-title-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.c5-title-area h3 { font-size: 1.8rem; font-weight: 800; }
+
+.c5-date {
+    background: #ff6b6b;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.c5-detail {
+    font-size: 0.8rem;
+    color: #555;
+    margin-left: auto;
+}
+
+.c5-overview {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.c5-body { display: flex; gap: 3rem; }
+
+.c5-info { flex: 1.2; }
+.c5-info ul li {
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    margin-left: 1.2rem;
+    color: #444;
+    list-style: disc;
+}
+
+.c5-info ul li ul li {
+    line-height: 1.6;
+    color: #333;
+    list-style: circle;
+}
+
+.c5-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.c5-project-img {
+    flex: 1;
+    background: #f4f4f4;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    min-height: 250px;
+    border: 1px dashed #ddd;
+}
+
+#footer {
+    padding: 4rem;
+    text-align: center;
+    background: #222;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
 }
